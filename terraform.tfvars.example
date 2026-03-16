@@ -1,0 +1,68 @@
+tenancy_ocid     = "ocid1.tenancy.oc1..exampleuniqueID"
+user_ocid        = "ocid1.user.oc1..exampleuniqueID"
+fingerprint      = "12:34:56:78:90:ab:cd:ef:12:34:56:78:90:ab:cd:ef"
+private_key_path = "~/.oci/oci_api_key.pem"
+region           = "eu-madrid-1"
+
+compartment_ocid    = "ocid1.compartment.oc1..exampleuniqueID"
+availability_domain = "EU-MADRID-1-AD-1"
+
+project_name               = "oci-secure-desktops"
+desktop_pool_display_name  = "oci-secure-desktops-pool"
+desktop_pool_description   = "OCI Secure Desktops pool for enterprise users"
+contact_details            = "cloud-ops@example.com"
+
+desktop_image_id           = "ocid1.image.oc1.eu-madrid-1.exampleuniqueID"
+desktop_image_name         = "ol8-secure-desktops-golden-image"
+desktop_operating_system   = "Oracle Linux"
+desktop_shape_name         = "VM.Standard.E4.Flex"
+desktop_ocpus              = 2
+desktop_memory_gbs         = 16
+desktop_baseline_ocpu_utilization = "BASELINE_1_1"
+
+maximum_size              = 10
+standby_size              = 1
+boot_volume_size_in_gbs   = 100
+is_storage_enabled        = true
+storage_size_in_gbs       = 50
+storage_backup_policy_id  = "ocid1.volumebackuppolicy.oc1..exampleuniqueID"
+are_privileged_users      = false
+use_dedicated_vm_host     = false
+are_volumes_preserved     = true
+
+vcn_cidr                  = "10.60.0.0/16"
+desktop_subnet_cidr       = "10.60.10.0/24"
+private_access_enabled    = false
+private_access_subnet_cidr = "10.60.20.0/24"
+allow_private_access_cidr = "10.0.0.0/8"
+private_access_endpoint_ip = ""
+
+disconnect_action                    = "STOP"
+disconnect_grace_period_in_minutes   = 60
+inactivity_action                    = "DISCONNECT"
+inactivity_grace_period_in_minutes   = 30
+
+audio_mode             = "NONE"
+cdm_mode               = "NONE"
+clipboard_mode         = "NONE"
+is_display_enabled     = true
+is_keyboard_enabled    = true
+is_pointer_enabled     = true
+is_printing_enabled    = false
+is_video_input_enabled = false
+
+availability_policy_enabled        = false
+availability_start_cron_expression = ""
+availability_start_timezone        = "Europe/Madrid"
+availability_stop_cron_expression  = ""
+availability_stop_timezone         = "Europe/Madrid"
+
+time_start_scheduled = null
+time_stop_scheduled  = null
+
+freeform_tags = {
+  Project = "oci-secure-desktops"
+  Owner   = "Leandro"
+}
+
+defined_tags = {}
